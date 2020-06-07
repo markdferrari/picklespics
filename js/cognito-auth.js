@@ -1,6 +1,6 @@
-/*global WildRydes _config AmazonCognitoIdentity AWSCognito*/
+/*global PicklesPics _config AmazonCognitoIdentity AWSCognito*/
 
-var WildRydes = window.WildRydes || {};
+var PicklesPics = window.PicklesPics || {};
 
 (function scopeWrapper($) {
     var signinUrl = '/signin.html';
@@ -25,11 +25,11 @@ var WildRydes = window.WildRydes || {};
         AWSCognito.config.region = _config.cognito.region;
     }
 
-    WildRydes.signOut = function signOut() {
+    PicklesPics.signOut = function signOut() {
         userPool.getCurrentUser().signOut();
     };
 
-    WildRydes.authToken = new Promise(function fetchCurrentAuthToken(resolve, reject) {
+    PicklesPics.authToken = new Promise(function fetchCurrentAuthToken(resolve, reject) {
         var cognitoUser = userPool.getCurrentUser();
 
         if (cognitoUser) {
