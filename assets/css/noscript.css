@@ -1,27 +1,16 @@
 /*
-	Photon by HTML5 UP
+	Parallelism by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Header */
+/* Main */
 
-	body.is-preload #header .inner {
-		-moz-transform: none;
-		-webkit-transform: none;
-		-ms-transform: none;
-		transform: none;
-		opacity: 1;
+	#main {
+		opacity: 1 !important;
+		overflow-x: auto !important;
 	}
 
-		body.is-preload #header .inner .actions {
-			-moz-transform: none;
-			-webkit-transform: none;
-			-ms-transform: none;
-			transform: none;
-			opacity: 1;
+		#main .item.thumb img {
+			opacity: 1 !important;
 		}
-
-	body.is-preload #header:after {
-		opacity: 0;
-	}
